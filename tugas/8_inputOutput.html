@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Biodata</title>
+    <script>
+      function displayBiodata() {
+        var fields = ["nama", "npm", "ttl", "alamat", "prodi"];
+        var output = "<h3>Biodata Mahasiswa</h3>";
+        fields.forEach(function (field) {
+          output +=
+            "<p><strong>" +
+            field.toUpperCase() +
+            " : </strong>" +
+            document.getElementById(field).value +
+            "</p>";
+        });
+        document.getElementById("output").innerHTML = output;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Input Biodata Mahasiswa</h1>
+
+    <form
+      onsubmit="
+        event.preventDefault();
+        displayBiodata();
+      "
+    >
+      <label for="nama">Nama :</label><input type="text" id="nama" required />
+      <br /><br />
+      <label for="npm">NPM :</label
+      ><input type="text" id="npm" required /><br /><br />
+      <label for="ttl">TTL :</label
+      ><input type="text" id="ttl" required /><br /><br />
+      <label for="alamat">Alamat : </label>
+      <input type="text" id="alamat" required /> <br /><br />
+      <label for="prodi">Prodi : </label
+      ><input type="text" id="prodi" required /> <br /><br />
+      <input type="submit" value="submit" />
+    </form>
+    <div id="output" style="margin-top: 20px"></div>
+  </body>
+</html>

@@ -5,5 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Input Output</title>
   </head>
-  <body></body>
+  <script>
+    function displayBiodata() {
+      var fields = ["nama", "npm", "prodi"];
+      var biodata = "<p>biodata mahasiswa</p>";
+
+      fields.forEach(function (field) {
+        biodata +=
+          "<p>" + field + " : " + document.getElementById(field).value + "</p>";
+      });
+      document.getElementById("output").innerHTML = biodata;
+    }
+  </script>
+  <body>
+    <form
+      onsubmit="
+        event.preventDefault();
+        displayBiodata();
+      "
+    >
+      <label for="">Nama</label> <input type="text" id="nama" required />
+      <label for="">npm</label> <input type="text" id="npm" required />
+      <label for="">prodi</label> <input type="text" id="prodi" required />
+      <input type="submit" />
+    </form>
+
+    <div id="output" style="margin-top: 20px"></div>
+  </body>
 </html>

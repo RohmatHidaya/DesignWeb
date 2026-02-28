@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Data Pegawai</title>
+  </head>
+  <script>
+    function tambahData() {
+      var table = document.getElementById("dataTable");
+      var row = table.insertRow(-1);
+      ["nama", "nip", "jabatan"].forEach(function (id, i) {
+        row.insertCell(i).innerHTML = document.getElementById(id).value;
+        document.getElementById(id).value = "";
+      });
+    }
+  </script>
+  <body>
+    <h1>Input Pegawai</h1>
+
+    <form
+      onsubmit="
+        event.preventDefault();
+        tambahData();
+      "
+    >
+      <label for="">Nama:</label><input type="text" id="nama" required />
+      <br /><br />
+      <label for="">NIP:</label
+      ><input type="text" id="nip" required /><br /><br />
+      <label for="">Jabatan:</label
+      ><input type="text" id="jabatan" required /><br /><br />
+      <input type="submit" />
+    </form>
+
+    <h2>Data Pegawai</h2>
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th>Nama:</th>
+          <th>NIM:</th>
+          <th>Jabatan:</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>

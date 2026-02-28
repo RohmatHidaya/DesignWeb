@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>latihan 3 Input Output</title>
+  </head>
+  <script>
+    function displayBiodata() {
+      var fields = ["nama", "npm", "prodi"];
+      var output = "<h3>Biodata Mahasiswa</h3>";
+      fields.forEach(function (field) {
+        output +=
+          "<p>" + field + " : " + document.getElementById(field).value + "</p>";
+      });
+      document.getElementById("output").innerHTML = output;
+    }
+  </script>
+  <body align="center">
+    <form
+      onsubmit="
+        event.preventDefault();
+        displayBiodata();
+      "
+    >
+      <input type="text" id="nama" placeholder="nama" required /><br /><br />
+      <input type="text" id="npm" placeholder="npm" required /><br /><br />
+      <input type="text" id="prodi" placeholder="prodi" required /><br /><br />
+      <input type="submit" name="" id="" />
+    </form>
+
+    <div id="output" style="margin-top: 40px"></div>
+  </body>
+</html>

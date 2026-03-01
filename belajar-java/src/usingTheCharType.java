@@ -1,4 +1,3 @@
-package latihan;
 
 public class usingTheCharType {
     public static void main (String args []){

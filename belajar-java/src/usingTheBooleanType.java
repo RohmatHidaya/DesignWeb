@@ -1,4 +1,3 @@
-package latihan;
 
 public class usingTheBooleanType {
     public static void main(String args []){

@@ -28,7 +28,6 @@ public class gui {
         buttonSubmit.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 tampil.setText("halo " + text.getText());
-                int a = 1 + 1;
             }
         });
 

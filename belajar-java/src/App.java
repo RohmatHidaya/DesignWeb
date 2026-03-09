@@ -16,15 +16,17 @@ public class App {
 
         // System.out.println(math.sum(1, 1));
 
-        mahasiswa mhs = new mahasiswa("rohmat", "243", "si", "lampung");
-        mhs.nama = "rohmat hidayat";
-        mhs.jurusan = "if";
-        mhs.tampilData();
+        // mahasiswa mhs = new mahasiswa("rohmat", "243", "si", "lampung");
+        // mhs.nama = "rohmat hidayat";
+        // mhs.jurusan = "if";
+        // mhs.tampilData();
 
-        mahasiswa mhs2 = new mahasiswa();
-        mhs2.setNim("2431");
+        // mahasiswa mhs2 = new mahasiswa();
+        // mhs2.setNim("2431");
 
-        mhs2.tampilData();
+        // mhs2.tampilData();
+
+        // AkunBank rohmat = new AkunBank();
 
     }
 }

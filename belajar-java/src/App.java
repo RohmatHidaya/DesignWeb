@@ -6,7 +6,7 @@ public class App {
         // book buku2 = new book();
 
         // buku1.TampilkanInfo();
-
+//test
         // buku1.diskon(50);
 
         // buku1.TampilkanInfo();

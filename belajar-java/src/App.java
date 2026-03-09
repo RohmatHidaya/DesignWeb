@@ -6,7 +6,7 @@ public class App {
         // book buku2 = new book();
 
         // buku1.TampilkanInfo();
-//test
+        // test
         // buku1.diskon(50);
 
         // buku1.TampilkanInfo();
@@ -14,6 +14,17 @@ public class App {
         // buku2.harga = 10000;
         // buku2.TampilkanInfo();
 
-        System.out.println(math.sum(1, 1));
+        // System.out.println(math.sum(1, 1));
+
+        mahasiswa mhs = new mahasiswa("rohmat", "243", "si", "lampung");
+        mhs.nama = "rohmat hidayat";
+        mhs.jurusan = "if";
+        mhs.tampilData();
+
+        mahasiswa mhs2 = new mahasiswa();
+        mhs2.setNim("2431");
+
+        mhs2.tampilData();
+
     }
 }
